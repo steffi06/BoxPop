@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A21D79D715F81E61007DF073 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21D79D615F81E61007DF073 /* UIKit.framework */; };
+		A21D79D915F81E61007DF073 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21D79D815F81E61007DF073 /* Foundation.framework */; };
+		A21D79DB15F81E61007DF073 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21D79DA15F81E61007DF073 /* CoreGraphics.framework */; };
+		A21D79E115F81E61007DF073 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A21D79DF15F81E61007DF073 /* InfoPlist.strings */; };
+		A21D79E315F81E61007DF073 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A21D79E215F81E61007DF073 /* main.m */; };
+		A21D79E715F81E61007DF073 /* BoxPopAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A21D79E615F81E61007DF073 /* BoxPopAppDelegate.m */; };
+		A21D79EF15F81E9C007DF073 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = A21D79EE15F81E9C007DF073 /* Box.m */; };
+		A21D79F515F81F08007DF073 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A21D79F415F81F08007DF073 /* GameViewController.m */; };
+		A21D79F715F8274D007DF073 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21D79F615F8274D007DF073 /* QuartzCore.framework */; };
+		A21D79FE15F83448007DF073 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = A21D79FD15F83448007DF073 /* GameView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A21D79D215F81E61007DF073 /* BoxPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21D79D615F81E61007DF073 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A21D79D815F81E61007DF073 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A21D79DA15F81E61007DF073 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A21D79DE15F81E61007DF073 /* BoxPop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BoxPop-Info.plist"; sourceTree = "<group>"; };
+		A21D79E015F81E61007DF073 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A21D79E215F81E61007DF073 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A21D79E415F81E61007DF073 /* BoxPop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BoxPop-Prefix.pch"; sourceTree = "<group>"; };
+		A21D79E515F81E61007DF073 /* BoxPopAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoxPopAppDelegate.h; sourceTree = "<group>"; };
+		A21D79E615F81E61007DF073 /* BoxPopAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoxPopAppDelegate.m; sourceTree = "<group>"; };
+		A21D79ED15F81E9C007DF073 /* Box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
+		A21D79EE15F81E9C007DF073 /* Box.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
+		A21D79F315F81F08007DF073 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		A21D79F415F81F08007DF073 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		A21D79F615F8274D007DF073 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A21D79FC15F83448007DF073 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		A21D79FD15F83448007DF073 /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A21D79CF15F81E61007DF073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A21D79F715F8274D007DF073 /* QuartzCore.framework in Frameworks */,
+				A21D79D715F81E61007DF073 /* UIKit.framework in Frameworks */,
+				A21D79D915F81E61007DF073 /* Foundation.framework in Frameworks */,
+				A21D79DB15F81E61007DF073 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A21D79C715F81E61007DF073 = {
+			isa = PBXGroup;
+			children = (
+				A21D79DC15F81E61007DF073 /* BoxPop */,
+				A21D79D515F81E61007DF073 /* Frameworks */,
+				A21D79D315F81E61007DF073 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A21D79D315F81E61007DF073 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A21D79D215F81E61007DF073 /* BoxPop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A21D79D515F81E61007DF073 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A21D79F615F8274D007DF073 /* QuartzCore.framework */,
+				A21D79D615F81E61007DF073 /* UIKit.framework */,
+				A21D79D815F81E61007DF073 /* Foundation.framework */,
+				A21D79DA15F81E61007DF073 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A21D79DC15F81E61007DF073 /* BoxPop */ = {
+			isa = PBXGroup;
+			children = (
+				A21D79E515F81E61007DF073 /* BoxPopAppDelegate.h */,
+				A21D79E615F81E61007DF073 /* BoxPopAppDelegate.m */,
+				A21D79ED15F81E9C007DF073 /* Box.h */,
+				A21D79EE15F81E9C007DF073 /* Box.m */,
+				A21D79FC15F83448007DF073 /* GameView.h */,
+				A21D79FD15F83448007DF073 /* GameView.m */,
+				A21D79F315F81F08007DF073 /* GameViewController.h */,
+				A21D79F415F81F08007DF073 /* GameViewController.m */,
+				A21D79DD15F81E61007DF073 /* Supporting Files */,
+			);
+			path = BoxPop;
+			sourceTree = "<group>";
+		};
+		A21D79DD15F81E61007DF073 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A21D79DE15F81E61007DF073 /* BoxPop-Info.plist */,
+				A21D79DF15F81E61007DF073 /* InfoPlist.strings */,
+				A21D79E215F81E61007DF073 /* main.m */,
+				A21D79E415F81E61007DF073 /* BoxPop-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A21D79D115F81E61007DF073 /* BoxPop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A21D79EA15F81E61007DF073 /* Build configuration list for PBXNativeTarget "BoxPop" */;
+			buildPhases = (
+				A21D79CE15F81E61007DF073 /* Sources */,
+				A21D79CF15F81E61007DF073 /* Frameworks */,
+				A21D79D015F81E61007DF073 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoxPop;
+			productName = BoxPop;
+			productReference = A21D79D215F81E61007DF073 /* BoxPop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A21D79C915F81E61007DF073 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BoxPop;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = burnOffBabes;
+			};
+			buildConfigurationList = A21D79CC15F81E61007DF073 /* Build configuration list for PBXProject "BoxPop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A21D79C715F81E61007DF073;
+			productRefGroup = A21D79D315F81E61007DF073 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A21D79D115F81E61007DF073 /* BoxPop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A21D79D015F81E61007DF073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A21D79E115F81E61007DF073 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A21D79CE15F81E61007DF073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A21D79E315F81E61007DF073 /* main.m in Sources */,
+				A21D79E715F81E61007DF073 /* BoxPopAppDelegate.m in Sources */,
+				A21D79EF15F81E9C007DF073 /* Box.m in Sources */,
+				A21D79F515F81F08007DF073 /* GameViewController.m in Sources */,
+				A21D79FE15F83448007DF073 /* GameView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A21D79DF15F81E61007DF073 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A21D79E015F81E61007DF073 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A21D79E815F81E61007DF073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A21D79E915F81E61007DF073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A21D79EB15F81E61007DF073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BoxPop/BoxPop-Prefix.pch";
+				INFOPLIST_FILE = "BoxPop/BoxPop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A21D79EC15F81E61007DF073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BoxPop/BoxPop-Prefix.pch";
+				INFOPLIST_FILE = "BoxPop/BoxPop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A21D79CC15F81E61007DF073 /* Build configuration list for PBXProject "BoxPop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A21D79E815F81E61007DF073 /* Debug */,
+				A21D79E915F81E61007DF073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A21D79EA15F81E61007DF073 /* Build configuration list for PBXNativeTarget "BoxPop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A21D79EB15F81E61007DF073 /* Debug */,
+				A21D79EC15F81E61007DF073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A21D79C915F81E61007DF073 /* Project object */;
+}
