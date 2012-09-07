@@ -10,4 +10,6 @@
 
 @interface GameViewController : UIViewController
 
+-(void) blockTouchedAtColumnIndex: (int)columnIndex andRowIndex: (int)rowIndex;
+
 @end

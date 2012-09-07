@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Box : NSObject
-
+@interface Box : NSObject 
 @property (strong, nonatomic) UIColor *color;
-
 @end

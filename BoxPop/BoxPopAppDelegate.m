@@ -7,7 +7,7 @@
 //
 
 #import "BoxPopAppDelegate.h"
-#import "GameViewController.h"
+#import "StartViewController.h"
 
 @implementation BoxPopAppDelegate
 
@@ -16,7 +16,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    self.window.rootViewController = [GameViewController new];
+    self.window.rootViewController = [StartViewController new];
     [application setStatusBarHidden:YES];
     
     self.window.backgroundColor = [UIColor whiteColor];

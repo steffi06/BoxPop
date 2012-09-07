@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "Box.h"
 
-@interface GameView()
+@interface GameView() 
 
 @property (nonatomic) double boxDimension;
 
@@ -23,7 +23,9 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        self.backgroundColor = [UIColor darkGrayColor];
+
+
     }
     return self;
 }
@@ -34,11 +36,11 @@
     self.boxDimension = self.layer.frame.size.width / self.columnCount;
 }
 
--(void)makeBoxLayersWithColumnIndex: (int)i withBoxIndex: (int)j andBoxColor: (UIColor *)boxColor
+-(CALayer *)makeBoxLayersWithColumnIndex: (int)i withBoxIndex: (int)j andBoxColor: (UIColor *)boxColor
 {
     CALayer *boxLayer = [[CALayer alloc] init];
     
-    boxLayer.position = CGPointMake((0.5 + i) * self.boxDimension, (0.5 + j) * self.boxDimension);
+    boxLayer.position = CGPointMake((0.5 + i) * self.boxDimension, self.frame.size.height - (0.5 + j) * self.boxDimension);
     boxLayer.bounds = CGRectMake(0, 0, self.boxDimension, self.boxDimension);
     boxLayer.backgroundColor = [boxColor CGColor];
     
@@ -48,7 +50,23 @@
     boxLayer.shadowRadius = 4.0;
     
     [self.layer addSublayer:boxLayer];
+    return boxLayer;
+}
 
+-(void)popBoxGivenLayer: (CALayer *)layer
+{
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    animation.fromValue = @1.0;
+    animation.toValue = @0.0;
+    animation.autoreverses = NO;
+    // animation.duration = 0.5;
+    
+//    CATransition *animation = [CATransition animation];
+//    animation.duration = 0.5;
+//    animation.type = kCATransitionFade;
+//    
+    [layer addAnimation:animation forKey:@"opacity"];
+    
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -57,11 +75,10 @@
     CGPoint touchPoint = [touch locationInView:self];
     
     int columnIndex =  touchPoint.x / self.boxDimension;
-    int rowIndex = touchPoint.y / self.boxDimension;
+    int rowIndex = (self.frame.size.height - touchPoint.y) / self.boxDimension;
     
-    // pass to VC method
-    // VC to lookup box from boxArray
-    
+    [self.gameVC blockTouchedAtColumnIndex:columnIndex andRowIndex:rowIndex];
+
 }
 
 @end

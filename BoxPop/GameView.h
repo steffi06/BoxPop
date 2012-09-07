@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GameViewController.h"
 
 @interface GameView : UIView
 
 @property (nonatomic) int columnCount;
+@property (weak) GameViewController *gameVC;
 
--(void)makeBoxLayersWithColumnIndex: (int)i withBoxIndex: (int)j andBoxColor: (UIColor *)boxColor;
+-(CALayer *)makeBoxLayersWithColumnIndex: (int)i withBoxIndex: (int)j andBoxColor: (UIColor *)boxColor;
+-(void)popBoxGivenLayer: (CALayer *)layer;
 
 @end

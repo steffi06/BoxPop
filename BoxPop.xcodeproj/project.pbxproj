@@ -17,6 +17,9 @@
 		A21D79F515F81F08007DF073 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A21D79F415F81F08007DF073 /* GameViewController.m */; };
 		A21D79F715F8274D007DF073 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21D79F615F8274D007DF073 /* QuartzCore.framework */; };
 		A21D79FE15F83448007DF073 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = A21D79FD15F83448007DF073 /* GameView.m */; };
+		A21D7A0E15F960EA007DF073 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A21D7A0C15F960EA007DF073 /* StartViewController.m */; };
+		A21D7A0F15F960EA007DF073 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A21D7A0D15F960EA007DF073 /* StartViewController.xib */; };
+		A21D7A1215F969A8007DF073 /* boxpop.png in Resources */ = {isa = PBXBuildFile; fileRef = A21D7A1115F969A8007DF073 /* boxpop.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,10 @@
 		A21D79F615F8274D007DF073 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A21D79FC15F83448007DF073 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
 		A21D79FD15F83448007DF073 /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		A21D7A0B15F960EA007DF073 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		A21D7A0C15F960EA007DF073 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		A21D7A0D15F960EA007DF073 /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		A21D7A1115F969A8007DF073 /* boxpop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boxpop.png; path = ../../../../../Desktop/boxpop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +100,9 @@
 				A21D79FD15F83448007DF073 /* GameView.m */,
 				A21D79F315F81F08007DF073 /* GameViewController.h */,
 				A21D79F415F81F08007DF073 /* GameViewController.m */,
+				A21D7A0B15F960EA007DF073 /* StartViewController.h */,
+				A21D7A0C15F960EA007DF073 /* StartViewController.m */,
+				A21D7A0D15F960EA007DF073 /* StartViewController.xib */,
 				A21D79DD15F81E61007DF073 /* Supporting Files */,
 			);
 			path = BoxPop;
@@ -101,6 +111,7 @@
 		A21D79DD15F81E61007DF073 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A21D7A1115F969A8007DF073 /* boxpop.png */,
 				A21D79DE15F81E61007DF073 /* BoxPop-Info.plist */,
 				A21D79DF15F81E61007DF073 /* InfoPlist.strings */,
 				A21D79E215F81E61007DF073 /* main.m */,
@@ -162,6 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A21D79E115F81E61007DF073 /* InfoPlist.strings in Resources */,
+				A21D7A0F15F960EA007DF073 /* StartViewController.xib in Resources */,
+				A21D7A1215F969A8007DF073 /* boxpop.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +190,7 @@
 				A21D79EF15F81E9C007DF073 /* Box.m in Sources */,
 				A21D79F515F81F08007DF073 /* GameViewController.m in Sources */,
 				A21D79FE15F83448007DF073 /* GameView.m in Sources */,
+				A21D7A0E15F960EA007DF073 /* StartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +298,7 @@
 				A21D79EC15F81E61007DF073 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
